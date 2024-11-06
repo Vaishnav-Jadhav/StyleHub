@@ -1,0 +1,87 @@
+*
+{
+    margin: 0;
+    padding: 0%;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-bottom: 2px solid rgb(127, 126, 126);
+}
+.title 
+{
+    font-weight: bolder;
+}
+.slogan
+{
+    text-align: center;
+}
+.section-para
+{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e9ecef;
+    font-size: 17px;
+    padding-top: 5px;
+    border-radius: 30px;
+   padding-left: 50%;
+}
+.intro
+{
+    font-weight: bold;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.images{
+    transition: all 0.3s ease-in;
+}
+.images:hover{
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in;
+}
+main{
+    background-color: #f2f2f2;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: tomato;
+    opacity: 0.9;
+    text-decoration: underline;
+}
+.picDiv 
+{
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    bottom: -155px;
+    left: 10px;
+    color: white;
+}
+.picDiv:hover .content{
+    bottom: -10px;
+    padding: 10px;
+    transition: all 1.5s;
+}
+.picDiv:hover  .cartImg
+{
+    filter: brightness(0.6);
+}
+
+#startAnchor
+{
+    color: white;
+    text-decoration: none;
+}
+

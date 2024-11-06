@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>StyleHub</title>
+      <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="/src/styles/style.css">
+  </head>
+  <body class="container-fluid" onload="bodyLoad()">
+    <div class="main-container">
+        <header class="mx-4 bg-light">
+           <div>
+             <h2 class="title text-dark-emphasis">Styles<span class="text-danger">H</span>ub</h2>
+           </div>
+           <div>
+                <button class="btn btn-light">New&Featured</button>
+                <button class="btn btn-light">Men</button>
+                <button class="btn btn-light">Women</button>
+                <button class="btn btn-light">Kids</button>
+                <button class="btn btn-light">Accessories</button>
+                <button class="btn btn-light">Sale</button>
+           </div>
+           <div class="header-icons">
+             <button class="btn btn-light"><span class="bi bi-search"></span></button>
+             <button class="btn btn-light"  data-bs-toggle="modal" data-bs-target="#signModal"><span class="bi bi-person"></span></button>
+             <button class="btn btn-light"><span class="bi bi-heart"></span></button>
+            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cartModal"><span class="bi bi-bag"></span><span class="badge bg-dark" id="badgeNum"></span></button>
+           </div>
+        </header>
+        <!--cart Modal-->
+          <div class="modal fade " id="cartModal">
+            <div class="modal-dialog">
+             <div class="modal-content bg-light">
+              <div class="modal-header">
+                <h2 class="text-info-emphasis">Your Cart Item's</h2>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body overflow-auto" style="height: 400px;">
+                <table class="table table-hover">
+                  <thead>
+                     <tr>
+                       <th>Name</th>
+                       <th>Price</th>
+                       <th>Review</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                      
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button class="btn btn-outline-info" data-bs-dismiss="modal">Okay</button>
+              </div>
+             </div>
+            </div>
+          </div>
+        <!--Cart Modal End-->
+
+        <!--modal for sign in-->
+        <div class="modal fade" id="signModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form action="">
+                <div class="modal-header">
+                  <h2>User Registration</h2>
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <label for="userName" class="form-label">Enter User Name</label>
+                    <div>
+                      <input type="text" id="userName" class="form-control">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="userMail" class="form-label">Enter User Email Address</label>
+                    <div>
+                      <input type="email" id="userMail" class="form-control">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="pass" class="form-label">Enter Password</label>
+                    <div>
+                      <input type="password" id="pass" class="form-control">
+                    </div>
+                    <p class="msg"></p>
+                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button class="btn btn-primary" type="submit" data-bs-dismiss="modal">Submit</button>
+                  <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--modal end-->
+        <section>
+           <div class="slogan mt-5">
+                 <div class="d-flex justify-content-center">
+                     <p class="section-para p-2 mt-3">Experience fashion like never before</p>
+                 </div>
+                 <h2 class="intro text-dark-emphasis">Elevate Your Style With StyleHub:Where Fashion Meets Passion</h2>
+                <div class="d-flex justify-content-center">
+                       <p class="w-50">Discover a world of fashion-forward trends,curated collection, and timelesspiece that inspire.Unlish     your     fashion insta and embark on a journey ofconfidence,elegence and inpeccable style</p>
+                </div>
+                <button class="btn btn-dark rounded-5" id="strtBtn" ><a href="#shopping" id="startAnchor">Start shopping</a></button>    <!--onclick="ChangeBtn()"-->
+           </div>
+           <div class="cards my-5 py-5 ps-5" style="background-color: #e9ecef;" id="shopping">
+                <img src="/public/assets/1._SY530_QL85_.jpg" class="images mx-3" height="350">  <!--//image is for hover-->
+                <img src="/public/assets/2._SY530_QL85_.jpg" class="images mx-3" height="350">
+                <img src="/public/assets/5._SY530_QL85_.jpg" class="images mx-3" height="350">
+                <img src="/public/assets/7._SY530_QL85_ .jpg" class="images mx-3" height="350">
+                <img src="/public/assets/9._SY530_QL85_.jpg" class=" images mx-3" height="350">
+           </div>
+        </section>
+        <section>
+                <div>
+                   <h2 class="intro text-dark-emphasis text-center" style="font-size: 35px;">Explore Our Latest Collection and Electronic Accessories For You</h2>
+                  <div class="d-flex justify-content-center">
+                    <p class="w-50 text-center">Explore our latest collection to unlish your inner fashionInsta and embark on a journey of confidence, elegance and inpeccable style</p>
+                  </div>
+                </div>
+                <div class="my-3">
+                    <!--
+                      <nav class="w-100 p-2 d-flex justify-content-center my-4">
+                        <button  class="nav-btn btn btn-outline-dark rounded-5 mx-3 px-4">All</button>
+                        <button  class="nav-btn btn btn-outline-dark rounded-5 mx-3">electronics</button>
+                        <button  class="nav-btn btn btn-outline-dark rounded-5 mx-3">jewelery</button>
+                        <button  class="nav-btn btn btn-outline-dark rounded-5 mx-3">men's clothing</button>
+                        <button  class="nav-btn btn btn-outline-dark rounded-5 mx-3">women's clothing</button>
+                    </nav>
+                    -->
+                    <main style="height: 610px;" class="d-flex flex-wrap overflow-auto ps-4 border border-dark-subtle">
+
+                    </main>
+                </div>
+        </section>
+        <section class="my-4">
+          <div class="my-3">
+              <h2 class="intro text-center text-dark-emphasis">Our Best Collection For Youhhh<3...</h2>
+              <div class="d-flex justify-content-center">
+                <p class="w-50 text-center">Everything looks good with confidence. Expressing the boldness of beauty through fashion. Fabulous clothes make me remember how beautiful life is. </p>
+              </div>
+          </div>
+          <div class="row border border-1 p-3 mx-1 bg-dark-subtle" >
+              <div class="picDiv  col position-relative overflow-hidden my-3" style="width: 200px; height: 250px;">
+                <img src="/public/assets/couple2.jpg" alt="Couple Collection" class="cartImg" width="100%" height="100%">
+                <div class="content w-75">
+                  <h2>Couple Collection</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis delectus voluptatibus inventore enim praesentium ea laudantium eveniet itaque quod.</p>
+                </div>
+              </div>
+              <div class="picDiv  col position-relative overflow-hidden my-3" style="width: 200px; height: 250px;">
+                <img src="/public/assets/watch2.jpg" alt="Watches" class="cartImg"  width="100%" height="100%">
+                <div class="content w-75">
+                  <h2>Branded Watche's</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis delectus voluptatibus inventore enim praesentium ea laudantium eveniet itaque quod.</p>
+                </div>
+              </div>
+              <div class="picDiv  col position-relative overflow-hidden my-3" style="width: 200px; height: 250px;">
+                <img src="/public/assets/shoes2.jpg" alt="Shoes" class="cartImg" width="100%" height="100%">
+                <div class="content w-75">
+                  <h2>Shoe's</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis delectus voluptatibus inventore enim praesentium ea laudantium eveniet itaque quod.</p>
+                </div>
+              </div>
+          </div>
+        </section>
+        <footer class="bg-dark mt-3 text-light p-3 pt-5">
+          <div class="d-flex justify-content-around">
+            <dl>
+              <dt>Get to Know Us</dt>
+              <dd><a href="#">About Us</a></dd>
+              <dd><a href="#">Careers</a></dd>
+              <dd><a href="#">Press Releases</a></dd>
+              <dd><a href="#">Amazon Science</a></dd>  
+            </dl>
+            <dl>
+              <dt>Connect with Us</dt>
+              <dd><a href="#">Facebook</a></dd>
+              <dd><a href="#">Twitter</a></dd>
+              <dd><a href="#">Instagram</a></dd> 
+            </dl>
+            <dl>
+              <dt>Make Money with Us</dt>
+              <dd><a href="#">Sell on Amazon</a></dd>
+              <dd><a href="#">Sell under Amazon Accelerator</a></dd>
+              <dd><a href="#">Protect and Build Your Brand</a></dd>
+              <dd><a href="#">Amazon Global Selling</a></dd>
+              <dd><a href="#">Become an Affiliate</a></dd>
+              <dd><a href="#">Fulfilment by Amazon</a></dd>
+              <dd><a href="#">Advertise Your Products</a></dd>
+              <dd><a href="#">Amazon Pay on Merchants</a></dd>  
+            </dl>
+            <dl>
+              <dt>Let Us Help You</dt>
+                <dl><a href="#">COVID-19 and Amazon</a></dl>
+                <dl><a href="#">Returns Centre</a></dl>
+                <dl><a href="#">100% Purchase Protection</a></dl>
+                <dl><a href="#">Amazon App Download</a></dl>
+                <dl><a href="#">Help</a></dl>
+            </dl>
+          </div>
+          <h4 class="title text-light text-center">Styles<span class="text-danger">H</span>ub</h4>
+        </footer>
+        
+      
+        
+
+    </div>
+
+
+
+
+    <script>
+      function ChangeBtn()
+      {
+        let btn=document.getElementById("strtBtn");
+        btn.innerHTML="Let's Go...";
+        btn.style.transform="0.5s";
+      }
+
+      function bodyLoad()
+      {
+        loadProduct();
+        
+      }
+
+      function loadProduct()
+      {
+        fetch("https://fakestoreapi.com/products")
+        .then(function (response){
+          return response.json();
+        })
+        .then(function(data){
+
+          for(let categories of data)
+          {
+            let div=document.createElement("div");
+            div.className="card p-2 m-5";
+            div.style.width="250px";
+            div.innerHTML=`
+            <img src="${categories.image}" height=250px>
+            <div class="card-header m-2">
+              ${categories.title}
+            </div>
+            <div class="card-body">
+              <dl>
+                <dt>Price</dt>
+                <dd>
+                 ${categories.price}$
+                </dd>
+                <dt>Rating</dt>
+                <dd>
+                   <span class="bi bi-star-fill">${categories.rating.rate}</span>
+                   [${categories.rating.count}]
+                </dd>
+              </dl>
+            </div>
+            <div>
+              <button class="btn btn-danger w-100" onclick="addCartClick(${categories.id})"><span class="bi bi-cart"></span>Add to Cart</button>
+            </div>`;
+
+            document.querySelector("main").appendChild(div);
+          }
+        })
+      }
+
+      let count=0;
+
+      function addCartClick(id)
+      {
+        
+        //alert("Alert Working");
+        //console.log(id);
+        fetch(`https://fakestoreapi.com/products/${id}`)
+        .then(function (response){
+          return response.json();
+        })
+        .then(function (data){
+           let tr=document.createElement("tr");
+            let tdName=document.createElement("td");
+            let tdPrice=document.createElement("td");
+            let tdPic=document.createElement("td");
+
+            tdName.innerHTML=data.title;
+            tdPrice.innerHTML=`$ ${data.price}`;
+            tdPic.innerHTML=`
+            <img src="${data.image}" height=80px alt="API not Loading">`;
+
+            tr.appendChild(tdName);
+            tr.appendChild(tdPrice);
+            tr.appendChild(tdPic);
+
+            alert(`Adding ${data.title} into Cart List`);
+            
+            let badge=document.getElementById("badgeNum");
+            badge.innerHTML=`${++count}`;
+
+            document.querySelector("tbody").appendChild(tr);
+
+        })
+
+      }
+
+
+    
+
+
+
+
+      
+    </script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
